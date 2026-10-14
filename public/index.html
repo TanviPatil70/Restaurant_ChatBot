@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodieHub Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">🍕 FoodieHub</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+        </div>
+
+        <button class="chat-button" onclick="openChat()">
+            Chat with Us
+        </button>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">FRESH • DELICIOUS • DELIVERED</p>
+
+            <h1>
+                Good Food.<br>
+                Good Mood.
+            </h1>
+
+            <p>
+                Enjoy delicious pizzas, burgers, pasta and more
+                from FoodieHub Restaurant.
+            </p>
+
+            <button class="order-button" onclick="openChat()">
+                Order with FoodieHub
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            🍕
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+
+        <h2>Our Popular Menu</h2>
+
+        <p class="section-description">
+            Something delicious for everyone.
+        </p>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+                <div class="food-icon">🍕</div>
+                <h3>Pizza</h3>
+                <p>Freshly baked pizzas with delicious toppings.</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="food-icon">🍔</div>
+                <h3>Burgers</h3>
+                <p>Juicy burgers prepared fresh to order.</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="food-icon">🍝</div>
+                <h3>Pasta</h3>
+                <p>Creamy and flavorful pasta dishes.</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="food-icon">🥤</div>
+                <h3>Beverages</h3>
+                <p>Refreshing drinks to complete your meal.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About FoodieHub</h2>
+
+        <p>
+            FoodieHub is a restaurant serving delicious food with
+            convenient home delivery across selected areas of Mumbai.
+        </p>
+
+        <div class="restaurant-info">
+
+            <div>
+                <strong>📍 Location</strong>
+                <span>25 Marine Road, Mumbai</span>
+            </div>
+
+            <div>
+                <strong>🕐 Timings</strong>
+                <span>11:00 AM – 11:00 PM</span>
+            </div>
+
+            <div>
+                <strong>🚚 Delivery</strong>
+                <span>30–45 minutes</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Chat Window -->
+    <div class="chat-container" id="chatContainer">
+
+        <div class="chat-header">
+
+            <div>
+                <h3>🍕 FoodieHub Assistant</h3>
+                <span>Online • Ready to help</span>
+            </div>
+
+            <button onclick="closeChat()">×</button>
+
+        </div>
+
+
+        <div class="chat-messages" id="chatMessages">
+
+            <div class="message bot-message">
+                <div class="message-label">FoodieHub</div>
+
+                <div class="message-text">
+                    Welcome to FoodieHub Restaurant! 🍕
+                    <br><br>
+                    I can help you with our menu, timings,
+                    delivery, payments and placing an order.
+                    <br><br>
+                    What would you like to know?
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="chat-input-area">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Floating Chat Button -->
+    <button
+        class="floating-chat"
+        id="floatingChat"
+        onclick="openChat()"
+    >
+        💬
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
